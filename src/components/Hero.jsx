@@ -1,69 +1,43 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-
 function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen bg-slate-950 text-white flex items-center justify-center px-6"
+      className="min-h-screen flex items-center justify-center bg-slate-950 text-white px-6 text-center"
     >
-      <div className="text-center max-w-4xl">
+      <div className="max-w-3xl mx-auto">
 
-        <h2 className="text-2xl text-gray-400 mb-3">
+        <p className="text-cyan-400 text-xl font-semibold mb-4">
           Hello, I'm
-        </h2>
+        </p>
 
-        <h1 className="text-6xl md:text-7xl font-bold text-cyan-400">
-          Kartik 👋
+        <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          Kartik
         </h1>
 
-        <h3 className="mt-6 text-2xl md:text-3xl font-semibold">
-          Data Science Student
-        </h3>
+        <h2 className="text-2xl md:text-3xl font-semibold text-gray-300 mb-6">
+          Data Science Student & Python Developer
+        </h2>
 
-        <p className="mt-5 text-xl text-gray-300">
-          Turning Data into Insights with Python & AI
+        <p className="text-gray-400 text-lg leading-8 mb-8">
+          I'm passionate about Python, Data Analytics, Machine Learning
+          and building real-world projects.
         </p>
 
-        <p className="mt-4 text-gray-400">
-          Python • SQL • React • Machine Learning • Data Analysis
-        </p>
+        <div className="flex justify-center flex-wrap gap-4">
 
-        <div className="mt-10 flex flex-wrap justify-center gap-5">
+          <a
+            href="/resume.pdf"
+            download
+            className="bg-cyan-500 px-6 py-3 rounded-xl font-semibold hover:bg-cyan-600 transition duration-300"
+          >
+            Download Resume
+          </a>
 
           <a
             href="#contact"
-            className="bg-cyan-500 px-6 py-3 rounded-xl hover:bg-cyan-600 transition"
+            className="border border-cyan-400 px-6 py-3 rounded-xl font-semibold hover:bg-cyan-400 hover:text-slate-950 transition duration-300"
           >
-            Resume (Coming Soon)
-          </a>
-
-          <a
-            href="#projects"
-            className="border border-cyan-500 px-6 py-3 rounded-xl hover:bg-cyan-500 hover:text-white transition px-6 py-3 rounded-xl"
-          >
-            View Projects
-          </a>
-
-        </div>
-
-        <div className="mt-10 flex justify-center gap-8 text-3xl">
-
-          <a
-            href="https://github.com/ayush355904"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-cyan-400 transition"
-          >
-            <FaGithub />
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/kartik-6b7b03342"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-cyan-400 transition"
-          >
-            <FaLinkedin />
+            Contact Me
           </a>
 
         </div>
