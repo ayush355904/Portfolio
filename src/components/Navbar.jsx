@@ -1,55 +1,56 @@
+import React from "react";
+
 function Navbar() {
   return (
-    <nav className="bg-slate-950 text-white py-5 px-6">
-      <div className="max-w-6xl mx-auto flex items-center justify-between">
+    <nav className="navbar">
+      <div className="nav-container">
 
-        <h1 className="text-2xl font-bold text-cyan-400">
-          Kartik
-        </h1>
+        {/* Logo */}
+        <a href="#home" className="logo">
+          <span>K</span>artik
+        </a>
 
-        <ul className="hidden md:flex gap-8 text-lg">
-          <li>
-            <a href="#home" className="hover:text-cyan-400 transition">
-              Home
-            </a>
-          </li>
+        {/* Navigation */}
+        <div className="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
 
-          <li>
-            <a href="#about" className="hover:text-cyan-400 transition">
-              About
-            </a>
-          </li>
+        {/* Professional Social Links */}
+        <div className="social-links">
 
-          <li>
-            <a href="#skills" className="hover:text-cyan-400 transition">
-              Skills
-            </a>
-          </li>
+          <a
+            href="https://github.com/ayush355904"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-btn"
+          >
+            <span>GitHub</span>
+          </a>
 
-          <li>
-            <a href="#projects" className="hover:text-cyan-400 transition">
-              Projects
-            </a>
-          </li>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-btn"
+          >
+            <span>LinkedIn</span>
+          </a>
 
-          <li>
-            <a href="#certificates" className="hover:text-cyan-400 transition">
-              Certificates
-            </a>
-          </li>
+          <a
+            href="https://leetcode.com/u/3zQ49OdJC3/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-btn leetcode-btn"
+          >
+            <span>LeetCode</span>
+          </a>
 
-          <li>
-            <a href="#education" className="hover:text-cyan-400 transition">
-              Education
-            </a>
-          </li>
-
-          <li>
-            <a href="#contact" className="hover:text-cyan-400 transition">
-              Contact
-            </a>
-          </li>
-        </ul>
+        </div>
 
       </div>
     </nav>
